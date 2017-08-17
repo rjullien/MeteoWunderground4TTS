@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding: utf8
 import json
+from datetime import datetime
 import urllib2
 # import urllib
 def splitPluieJourneeNuit(pluieJour,pluieNuit):
@@ -209,6 +210,10 @@ def calculateAlert(FilenameAlert):
     DebutAlerte=data["alerts"][0]["date"]
     FinAlerte=data["alerts"][0]["expires"]
 
+    DebutAlerteDate=datetime.strptime(DebutAlerte, '%Y-%m-%d %H:%M:%S GMT')
+    DebutAlerte=datetime.strftime(DebutAlerteDate,'le %A %d %B a %H heure').replace(' 0', ' ')
+    FinAlerteDate=datetime.strptime(FinAlerte, '%Y-%m-%d %H:%M:%S GMT')
+    FinAlerte=datetime.strftime(FinAlerteDate,'le %A %d %B a %H heure').replace(' 0', ' ')
     if False:
         pprint(Alerte)
         pprint(TypeAlerte)
@@ -218,7 +223,7 @@ def calculateAlert(FilenameAlert):
         pprint(DebutAlerte)
         pprint(FinAlerte)
 
-    return str(TypeAlerte) + str(NiveauAlerte) + str(CouleurAlerte) + str(DescriptionAlerte) + str(DebutAlerte) + str(FinAlerte)
+    return "Alerte "+ str(TypeAlerte) + " de niveau " + str(CouleurAlerte) + "..." + str(DescriptionAlerte) + "..."  + str(DebutAlerte) + "..." + str(FinAlerte)
 
 def getDataMeteo(APIKey,requestType,RequestCity,debug):
 
