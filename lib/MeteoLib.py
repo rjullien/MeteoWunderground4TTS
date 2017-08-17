@@ -2,6 +2,7 @@
 # coding: utf8
 import json
 import urllib2
+# import urllib
 def TranslateDay(DayEnglish):
     if DayEnglish == "Monday":
         DayFrench = "Lundi"
@@ -215,5 +216,6 @@ def getDataMeteo(APIKey,requestType,RequestCity,debug):
         print req
         return req
     else:
+        # handler = urllib.urlopen(req)
         handler = urllib2.urlopen(req)
         return handler.read()

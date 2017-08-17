@@ -1,4 +1,4 @@
-
+# Meteo est un clone de MeteoRene sans l'APIKey
 import lib.MeteoLib
 import tempfile
 import sys
@@ -49,8 +49,9 @@ else:
 meteopath=tempfile.mkdtemp("meteo")
 if debug:
     print meteopath
-
-APIKey="2bb19059636b096b"
+# ------------
+# Insert your APIKeybelow
+APIKey="xxxx"
 if requestType == "forecast":
     FilenameMeteo= meteopath + "/Meteo" + RequestCityName + ".json"
 
@@ -69,7 +70,7 @@ if requestType == "forecast":
         handlerFMeteo.close()
 
     if Simul:
-        MessageMeteo="2 mm de pluie prevu le Mardi 15 Aout dont 0 mm le jour et 2 mm la nuit\nPas de neige prevu dans les 10 jours a venir"
+        MessageMeteo="2 mm de pluie prevu le Mardi 15 Aout dont 0 mm le jour et 2 mm la nuit ...\nPas de neige prevu dans les 10 jours a venir"
         print MessageMeteo
     else:
         MessageMeteo =  lib.MeteoLib.calculatePluie("pluie",FilenameMeteo)
