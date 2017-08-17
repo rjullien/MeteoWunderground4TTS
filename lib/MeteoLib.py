@@ -3,6 +3,32 @@
 import json
 import urllib2
 # import urllib
+def splitPluieJourneeNuit(pluieJour,pluieNuit):
+    if pluieJour !=0 and pluieNuit !=0:
+        MessagePluie = ", "\
+        + 'dont '\
+        + str(pluieJour)\
+        + ' millimetre le jour et '\
+        + str(pluieNuit)\
+        + ' millimetre la nuit'
+    elif pluieJour !=0:
+        MessagePluie = u", durant la journée"
+    else: # pluieJour =0 pluieNuit !0
+        MessagePluie = ", durant la nuit"
+    return MessagePluie
+def splitNeigeJourneeNuit(pluieJour,pluieNuit):
+    if pluieJour !=0 and pluieNuit !=0:
+        MessagePluie = ", "\
+        + 'dont '\
+        + str(pluieJour).rstrip('0').rstrip('.')\
+        + ' centimetre le jour et '\
+        + str(pluieNuit).rstrip('0').rstrip('.')\
+        + ' centimetre la nuit'
+    elif pluieJour !=0:
+        MessagePluie = u", durant la journée"
+    else: # pluieJour =0 pluieNuit !0
+        MessagePluie = ", durant la nuit"
+    return MessagePluie
 def TranslateDay(DayEnglish):
     if DayEnglish == "Monday":
         DayFrench = "Lundi"
@@ -112,33 +138,25 @@ def calculatePluie(ModeMeteo,FilenamePluie):
                 if PluieDetecte:
                     MessagePluie = MessagePluie + ", "
                 MessagePluie = MessagePluie \
-                + str(data["forecast"]["simpleforecast"]["forecastday"][i]["snow_allday"]["mm"])\
-                + ' mm de pluie prevu le '\
+                + str(data["forecast"]["simpleforecast"]["forecastday"][i]["snow_allday"]["cm"]).rstrip('0').rstrip('.')\
+                + ' centimetre de neige prevu le '\
                 + str(TranslateDay(data["forecast"]["simpleforecast"]["forecastday"][i]["date"]["weekday"]))\
                 + " " + str(data["forecast"]["simpleforecast"]["forecastday"][i]["date"]["day"])\
                 + " " + unicode(TranslateMonth(data["forecast"]["simpleforecast"]["forecastday"][i]["date"]["monthname"]))\
-                + ' dont '\
-                + str(data["forecast"]["simpleforecast"]["forecastday"][i]["snow_night_day"]["cm"])\
-                + ' cm le jour et '\
-                + str(data["forecast"]["simpleforecast"]["forecastday"][i]["snow_night"]["cm"])\
-                + ' cm la nuit'
-
+                + splitNeigeJourneeNuit(data["forecast"]["simpleforecast"]["forecastday"][i]["snow_day"]["cm"],data["forecast"]["simpleforecast"]["forecastday"][i]["snow_night"]["cm"])
+                PluieDetecte=True
         elif ModeMeteo == "pluie":
             if data["forecast"]["simpleforecast"]["forecastday"][i]["qpf_allday"]["mm"] != 0:
 
                 if PluieDetecte:
-                    MessagePluie = MessagePluie + ", "
+                    MessagePluie = MessagePluie + "... "
                 MessagePluie = MessagePluie \
                 + str(data["forecast"]["simpleforecast"]["forecastday"][i]["qpf_allday"]["mm"])\
-                + ' mm de pluie prevu le '\
+                + ' millimetre de pluie prevu le '\
                 + str(TranslateDay(data["forecast"]["simpleforecast"]["forecastday"][i]["date"]["weekday"]))\
                 + " " + str(data["forecast"]["simpleforecast"]["forecastday"][i]["date"]["day"])\
                 + " " + unicode(TranslateMonth(data["forecast"]["simpleforecast"]["forecastday"][i]["date"]["monthname"]))\
-                + ' dont '\
-                + str(data["forecast"]["simpleforecast"]["forecastday"][i]["qpf_day"]["mm"])\
-                + ' mm le jour et '\
-                + str(data["forecast"]["simpleforecast"]["forecastday"][i]["qpf_night"]["mm"])\
-                + ' mm la nuit'
+                + splitPluieJourneeNuit(data["forecast"]["simpleforecast"]["forecastday"][i]["qpf_day"]["mm"],data["forecast"]["simpleforecast"]["forecastday"][i]["qpf_night"]["mm"])
                 PluieDetecte=True
         else:
             MessagePluie="Error"

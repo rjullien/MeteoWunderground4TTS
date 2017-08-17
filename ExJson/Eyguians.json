@@ -261,11 +261,11 @@
                 },
                 "snow_allday": {
                 "in": 0.0,
-                "cm": 0.0
+                "cm": 1.0
                 },
                 "snow_day": {
                 "in": 0.0,
-                "cm": 0.0
+                "cm": 1.0
                 },
                 "snow_night": {
                 "in": 0.0,
@@ -335,15 +335,15 @@
                 },
                 "snow_allday": {
                 "in": 0.0,
-                "cm": 0.0
+                "cm": 5.0
                 },
                 "snow_day": {
                 "in": 0.0,
-                "cm": 0.0
+                "cm": 3.0
                 },
                 "snow_night": {
                 "in": 0.0,
-                "cm": 0.0
+                "cm": 2.0
                 },
                 "maxwind": {
                 "mph": 20,
@@ -409,7 +409,7 @@
                 },
                 "snow_allday": {
                 "in": 0.0,
-                "cm": 0.0
+                "cm": 7.0
                 },
                 "snow_day": {
                 "in": 0.0,
@@ -417,7 +417,7 @@
                 },
                 "snow_night": {
                 "in": 0.0,
-                "cm": 0.0
+                "cm": 7.0
                 },
                 "maxwind": {
                 "mph": 25,
