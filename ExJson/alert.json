@@ -1,0 +1,29 @@
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "alerts": 1
+  }
+        }
+                ,"query_zone": "999",
+        "alerts": [
+                {
+                "type": "WRN",
+                "wtype_meteoalarm": "3",
+                "wtype_meteoalarm_name": "Thunderstorms",
+                "level_meteoalarm": "2",
+                "level_meteoalarm_name": "Yellow",
+                "level_meteoalarm_description": "The weather is potentially dangerous. The weather phenomena that have been forecast are not unusual, but be attentive if you intend to practice activities exposed to meteorological risks. Keep informed about the expected meteorological conditions and do not take any avoidable risk.",
+                "description": "Potential disruption due to thunderstorms from 7:08PM CEST TUE until 4PM CEST WED",
+                "date": "2017-08-09 01:00:00 GMT",
+                "date_epoch": "NA",
+                "expires": "2017-08-09 14:00:00 GMT",
+                "expires_epoch": "NA",
+                "message": "Potential disruption due to thunderstorms from 7:08PM CEST TUE until 4PM CEST WED)",
+                "phenomena": "NA",
+                "significance": "NA",
+                "attribution": "Information provided by , <a href='http://meteoalarm.eu/'>EUMETNET - MeteoAlarm</a> Note: Time delays between this website and <a href='http://meteoalarm.eu/'>Meteoalarm.eu</a> are possible. For the most up-to-date information about alert levels as published by the participating National Meteorological Services, please visit <a href='http://meteoalarm.eu/'>Meteoalarm</a>. For terms of use of this information, and copyright information, see <a href='http://meteoalarm.eu/'>Meteoalarm</a> Terms of Use."
+                }
+        ]
+}
