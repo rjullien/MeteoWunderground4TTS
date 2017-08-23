@@ -1,0 +1,961 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "forecast10day": 1
+  }
+	}
+		,
+	"forecast":{
+		"txt_forecast": {
+		"date":"21:21 CEST",
+		"forecastday": [
+		{
+		"period":0,
+		"icon":"chancetstorms",
+		"icon_url":"http://icons.wxug.com/i/c/k/chancetstorms.gif",
+		"title":"mercredi",
+		"fcttext":"Orages en début de journée. Minimales : 48 ºF.",
+		"fcttext_metric":"Orages en début de journée. Minimales : 9 ºC.",
+		"pop":"90"
+		}
+		,
+		{
+		"period":1,
+		"icon":"nt_chancetstorms",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_chancetstorms.gif",
+		"title":"mercredi soir",
+		"fcttext":"Orages en début de journée. Minimales : 48 ºF. Vents N et variables. Risque de pluie : 90 %.",
+		"fcttext_metric":"Orages en début de journée. Minimales : 9 ºC. Vents N et variables. Risque de pluie : 90 %.",
+		"pop":"90"
+		}
+		,
+		{
+		"period":2,
+		"icon":"chancetstorms",
+		"icon_url":"http://icons.wxug.com/i/c/k/chancetstorms.gif",
+		"title":"jeudi",
+		"fcttext":"Orages se formant au cours de l'après-midi. Maximales : 58 ºF. Vents SO soufflant de 5 à 10 mi/h. Risque de pluie : 50 %.",
+		"fcttext_metric":"Orages se formant au cours de l\u0027après-midi. Maximales : 15 ºC. Vents SO soufflant de 10 à 15 km/h. Risque de pluie : 50 %.",
+		"pop":"50"
+		}
+		,
+		{
+		"period":3,
+		"icon":"nt_partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"title":"jeudi soir",
+		"fcttext":"Partiellement nuageux. Risque d'averses/orages isolés. Minimales : 47 ºF. Vents O soufflant de 5 à 10 mi/h.",
+		"fcttext_metric":"Partiellement nuageux. Risque d\u0027averses/orages isolés. Minimales : 8 ºC. Vents O soufflant de 10 à 15 km/h.",
+		"pop":"20"
+		}
+		,
+		{
+		"period":4,
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"title":"vendredi",
+		"fcttext":"Ciel plutôt dégagé. Risque d'averses/orages isolés. Maximales : 62 ºF. Vents OSO soufflant de 5 à 10 mi/h.",
+		"fcttext_metric":"Ciel plutôt dégagé. Risque d\u0027averses/orages isolés. Maximales : 17 ºC. Vents OSO soufflant de 10 à 15 km/h.",
+		"pop":"20"
+		}
+		,
+		{
+		"period":5,
+		"icon":"nt_partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"title":"vendredi soir",
+		"fcttext":"Partiellement nuageux. Minimales : 47 ºF. Vents NNO et variables.",
+		"fcttext_metric":"Partiellement nuageux. Minimales : 8 ºC. Vents NNO et variables.",
+		"pop":"10"
+		}
+		,
+		{
+		"period":6,
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"title":"samedi",
+		"fcttext":"Partiellement nuageux. Maximales : 64 ºF. Vents SO et variables.",
+		"fcttext_metric":"Partiellement nuageux. Maximales : 18 ºC. Vents SO et variables.",
+		"pop":"20"
+		}
+		,
+		{
+		"period":7,
+		"icon":"nt_partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"title":"samedi soir",
+		"fcttext":"Partiellement nuageux. Minimales : 48 ºF. Vents NO et variables.",
+		"fcttext_metric":"Partiellement nuageux. Minimales : 9 ºC. Vents NO et variables.",
+		"pop":"20"
+		}
+		,
+		{
+		"period":8,
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"title":"dimanche",
+		"fcttext":"Ciel plutôt dégagé. Maximales : 66 ºF. Vents SO soufflant de 5 à 10 mi/h.",
+		"fcttext_metric":"Ciel plutôt dégagé. Maximales : 19 ºC. Vents SO soufflant de 10 à 15 km/h.",
+		"pop":"0"
+		}
+		,
+		{
+		"period":9,
+		"icon":"nt_partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"title":"dimanche soir",
+		"fcttext":"Partiellement nuageux. Minimales : 50 ºF. Vents ONO soufflant de 5 à 10 mi/h.",
+		"fcttext_metric":"Partiellement nuageux. Minimales : 10 ºC. Vents ONO et variables.",
+		"pop":"0"
+		}
+		,
+		{
+		"period":10,
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"title":"lundi",
+		"fcttext":"Partiellement nuageux. Maximales : 67 ºF. Vents OSO et variables.",
+		"fcttext_metric":"Partiellement nuageux. Maximales : 19 ºC. Vents OSO et variables.",
+		"pop":"10"
+		}
+		,
+		{
+		"period":11,
+		"icon":"nt_clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+		"title":"lundi soir",
+		"fcttext":"Ciel plutôt dégagé. Minimales : 48 ºF. Vents N et variables.",
+		"fcttext_metric":"Ciel plutôt dégagé. Minimales : 9 ºC. Vents N et variables.",
+		"pop":"10"
+		}
+		,
+		{
+		"period":12,
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"title":"mardi",
+		"fcttext":"Ciel plutôt dégagé. Maximales : 66 ºF. Vents SSE et variables.",
+		"fcttext_metric":"Ciel plutôt dégagé. Maximales : 19 ºC. Vents SSE et variables.",
+		"pop":"10"
+		}
+		,
+		{
+		"period":13,
+		"icon":"nt_partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"title":"mardi soir",
+		"fcttext":"Partiellement nuageux. Minimales : 47 ºF. Vents NNE et variables.",
+		"fcttext_metric":"Partiellement nuageux. Minimales : 8 ºC. Vents NNE et variables.",
+		"pop":"20"
+		}
+		,
+		{
+		"period":14,
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"title":"mercredi",
+		"fcttext":"Ciel plutôt dégagé. Maximales : 64 ºF. Vents SSE soufflant de 5 à 10 mi/h.",
+		"fcttext_metric":"Ciel plutôt dégagé. Maximales : 18 ºC. Vents SSE soufflant de 10 à 15 km/h.",
+		"pop":"10"
+		}
+		,
+		{
+		"period":15,
+		"icon":"nt_partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"title":"mercredi soir",
+		"fcttext":"Partiellement nuageux. Minimales : 47 ºF. Vents OSO et variables.",
+		"fcttext_metric":"Partiellement nuageux. Minimales : 8 ºC. Vents OSO et variables.",
+		"pop":"20"
+		}
+		,
+		{
+		"period":16,
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"title":"jeudi",
+		"fcttext":"Partiellement nuageux. Maximales : 59 ºF. Vents SSO soufflant de 5 à 10 mi/h.",
+		"fcttext_metric":"Partiellement nuageux. Maximales : 15 ºC. Vents SSO soufflant de 10 à 15 km/h.",
+		"pop":"20"
+		}
+		,
+		{
+		"period":17,
+		"icon":"nt_partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"title":"jeudi soir",
+		"fcttext":"Partiellement nuageux. Minimales : 44 ºF. Vents ONO et variables.",
+		"fcttext_metric":"Partiellement nuageux. Minimales : 7 ºC. Vents ONO et variables.",
+		"pop":"20"
+		}
+		,
+		{
+		"period":18,
+		"icon":"chancerain",
+		"icon_url":"http://icons.wxug.com/i/c/k/chancerain.gif",
+		"title":"vendredi",
+		"fcttext":"Averses. Maximales : 60 ºF. Vents SSE soufflant de 5 à 10 mi/h. Risque de pluie : 50 %.",
+		"fcttext_metric":"Averses. Maximales : 16 ºC. Vents SSE soufflant de 10 à 15 km/h. Risque de pluie : 50 %.",
+		"pop":"50"
+		}
+		,
+		{
+		"period":19,
+		"icon":"nt_chancerain",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_chancerain.gif",
+		"title":"vendredi soir",
+		"fcttext":"Averses en début de journée. Minimales : 42 ºF. Vents N et variables. Risque de pluie : 40 %.",
+		"fcttext_metric":"Averses en début de journée. Minimales : 5 ºC. Vents N et variables. Risque de pluie : 40 %.",
+		"pop":"40"
+		}
+		]
+		},
+		"simpleforecast": {
+		"forecastday": [
+		{"date":{
+	"epoch":"1503507600",
+	"pretty":"19:00 CEST le 23 août 2017",
+	"day":23,
+	"month":8,
+	"year":2017,
+	"yday":234,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"août",
+	"monthname_short":"août",
+	"weekday_short":"mer",
+	"weekday":"mercredi",
+	"ampm":"PM",
+	"tz_short":"CEST",
+	"tz_long":"Europe/Paris"
+},
+		"period":1,
+		"high": {
+		"fahrenheit":"75",
+		"celsius":"23"
+		},
+		"low": {
+		"fahrenheit":"48",
+		"celsius":"9"
+		},
+		"conditions":"Risque d'orage",
+		"icon":"chancetstorms",
+		"icon_url":"http://icons.wxug.com/i/c/k/chancetstorms.gif",
+		"skyicon":"",
+		"pop":90,
+		"qpf_allday": {
+		"in": 0.02,
+		"mm": 1
+		},
+		"qpf_day": {
+		"in": null,
+		"mm": null
+		},
+		"qpf_night": {
+		"in": 0.02,
+		"mm": 1
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": null,
+		"cm": null
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "",
+		"degrees": 0
+		},
+		"avewind": {
+		"mph": 2,
+		"kph": 3,
+		"dir": "OSO",
+		"degrees": 241
+		},
+		"avehumidity": 83,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1503594000",
+	"pretty":"19:00 CEST le 24 août 2017",
+	"day":24,
+	"month":8,
+	"year":2017,
+	"yday":235,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"août",
+	"monthname_short":"août",
+	"weekday_short":"jeu",
+	"weekday":"jeudi",
+	"ampm":"PM",
+	"tz_short":"CEST",
+	"tz_long":"Europe/Paris"
+},
+		"period":2,
+		"high": {
+		"fahrenheit":"58",
+		"celsius":"14"
+		},
+		"low": {
+		"fahrenheit":"47",
+		"celsius":"8"
+		},
+		"conditions":"Risque d'orage",
+		"icon":"chancetstorms",
+		"icon_url":"http://icons.wxug.com/i/c/k/chancetstorms.gif",
+		"skyicon":"",
+		"pop":50,
+		"qpf_allday": {
+		"in": 0.05,
+		"mm": 1
+		},
+		"qpf_day": {
+		"in": 0.05,
+		"mm": 1
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "SO",
+		"degrees": 218
+		},
+		"avewind": {
+		"mph": 8,
+		"kph": 13,
+		"dir": "SO",
+		"degrees": 218
+		},
+		"avehumidity": 77,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1503680400",
+	"pretty":"19:00 CEST le 25 août 2017",
+	"day":25,
+	"month":8,
+	"year":2017,
+	"yday":236,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"août",
+	"monthname_short":"août",
+	"weekday_short":"vend",
+	"weekday":"vendredi",
+	"ampm":"PM",
+	"tz_short":"CEST",
+	"tz_long":"Europe/Paris"
+},
+		"period":3,
+		"high": {
+		"fahrenheit":"62",
+		"celsius":"17"
+		},
+		"low": {
+		"fahrenheit":"47",
+		"celsius":"8"
+		},
+		"conditions":"Ciel dégagé",
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"skyicon":"",
+		"pop":20,
+		"qpf_allday": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "OSO",
+		"degrees": 238
+		},
+		"avewind": {
+		"mph": 6,
+		"kph": 10,
+		"dir": "OSO",
+		"degrees": 238
+		},
+		"avehumidity": 65,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1503766800",
+	"pretty":"19:00 CEST le 26 août 2017",
+	"day":26,
+	"month":8,
+	"year":2017,
+	"yday":237,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"août",
+	"monthname_short":"août",
+	"weekday_short":"sam",
+	"weekday":"samedi",
+	"ampm":"PM",
+	"tz_short":"CEST",
+	"tz_long":"Europe/Paris"
+},
+		"period":4,
+		"high": {
+		"fahrenheit":"64",
+		"celsius":"18"
+		},
+		"low": {
+		"fahrenheit":"48",
+		"celsius":"9"
+		},
+		"conditions":"Partiellement nuageux",
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"skyicon":"",
+		"pop":20,
+		"qpf_allday": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "SO",
+		"degrees": 225
+		},
+		"avewind": {
+		"mph": 5,
+		"kph": 8,
+		"dir": "SO",
+		"degrees": 225
+		},
+		"avehumidity": 60,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1503853200",
+	"pretty":"19:00 CEST le 27 août 2017",
+	"day":27,
+	"month":8,
+	"year":2017,
+	"yday":238,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"août",
+	"monthname_short":"août",
+	"weekday_short":"dim",
+	"weekday":"dimanche",
+	"ampm":"PM",
+	"tz_short":"CEST",
+	"tz_long":"Europe/Paris"
+},
+		"period":5,
+		"high": {
+		"fahrenheit":"66",
+		"celsius":"19"
+		},
+		"low": {
+		"fahrenheit":"50",
+		"celsius":"10"
+		},
+		"conditions":"Ciel dégagé",
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"skyicon":"",
+		"pop":0,
+		"qpf_allday": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "SO",
+		"degrees": 234
+		},
+		"avewind": {
+		"mph": 7,
+		"kph": 11,
+		"dir": "SO",
+		"degrees": 234
+		},
+		"avehumidity": 51,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1503939600",
+	"pretty":"19:00 CEST le 28 août 2017",
+	"day":28,
+	"month":8,
+	"year":2017,
+	"yday":239,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"août",
+	"monthname_short":"août",
+	"weekday_short":"lun",
+	"weekday":"lundi",
+	"ampm":"PM",
+	"tz_short":"CEST",
+	"tz_long":"Europe/Paris"
+},
+		"period":6,
+		"high": {
+		"fahrenheit":"67",
+		"celsius":"19"
+		},
+		"low": {
+		"fahrenheit":"48",
+		"celsius":"9"
+		},
+		"conditions":"Partiellement nuageux",
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"skyicon":"",
+		"pop":10,
+		"qpf_allday": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "OSO",
+		"degrees": 254
+		},
+		"avewind": {
+		"mph": 5,
+		"kph": 8,
+		"dir": "OSO",
+		"degrees": 254
+		},
+		"avehumidity": 52,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1504026000",
+	"pretty":"19:00 CEST le 29 août 2017",
+	"day":29,
+	"month":8,
+	"year":2017,
+	"yday":240,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"août",
+	"monthname_short":"août",
+	"weekday_short":"mar",
+	"weekday":"mardi",
+	"ampm":"PM",
+	"tz_short":"CEST",
+	"tz_long":"Europe/Paris"
+},
+		"period":7,
+		"high": {
+		"fahrenheit":"66",
+		"celsius":"19"
+		},
+		"low": {
+		"fahrenheit":"47",
+		"celsius":"8"
+		},
+		"conditions":"Ciel dégagé",
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"skyicon":"",
+		"pop":10,
+		"qpf_allday": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "SSE",
+		"degrees": 148
+		},
+		"avewind": {
+		"mph": 5,
+		"kph": 8,
+		"dir": "SSE",
+		"degrees": 148
+		},
+		"avehumidity": 64,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1504112400",
+	"pretty":"19:00 CEST le 30 août 2017",
+	"day":30,
+	"month":8,
+	"year":2017,
+	"yday":241,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"août",
+	"monthname_short":"août",
+	"weekday_short":"mer",
+	"weekday":"mercredi",
+	"ampm":"PM",
+	"tz_short":"CEST",
+	"tz_long":"Europe/Paris"
+},
+		"period":8,
+		"high": {
+		"fahrenheit":"64",
+		"celsius":"18"
+		},
+		"low": {
+		"fahrenheit":"47",
+		"celsius":"8"
+		},
+		"conditions":"Ciel dégagé",
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/clear.gif",
+		"skyicon":"",
+		"pop":10,
+		"qpf_allday": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "SSE",
+		"degrees": 155
+		},
+		"avewind": {
+		"mph": 6,
+		"kph": 10,
+		"dir": "SSE",
+		"degrees": 155
+		},
+		"avehumidity": 63,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1504198800",
+	"pretty":"19:00 CEST le 31 août 2017",
+	"day":31,
+	"month":8,
+	"year":2017,
+	"yday":242,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"août",
+	"monthname_short":"août",
+	"weekday_short":"jeu",
+	"weekday":"jeudi",
+	"ampm":"PM",
+	"tz_short":"CEST",
+	"tz_long":"Europe/Paris"
+},
+		"period":9,
+		"high": {
+		"fahrenheit":"59",
+		"celsius":"15"
+		},
+		"low": {
+		"fahrenheit":"44",
+		"celsius":"7"
+		},
+		"conditions":"Partiellement nuageux",
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"skyicon":"",
+		"pop":20,
+		"qpf_allday": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "SSO",
+		"degrees": 205
+		},
+		"avewind": {
+		"mph": 7,
+		"kph": 11,
+		"dir": "SSO",
+		"degrees": 205
+		},
+		"avehumidity": 70,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1504285200",
+	"pretty":"19:00 CEST le 01 septembre 2017",
+	"day":1,
+	"month":9,
+	"year":2017,
+	"yday":243,
+	"hour":19,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"septembre",
+	"monthname_short":"Sep",
+	"weekday_short":"vend",
+	"weekday":"vendredi",
+	"ampm":"PM",
+	"tz_short":"CEST",
+	"tz_long":"Europe/Paris"
+},
+		"period":10,
+		"high": {
+		"fahrenheit":"60",
+		"celsius":"16"
+		},
+		"low": {
+		"fahrenheit":"42",
+		"celsius":"6"
+		},
+		"conditions":"Risque de pluie",
+		"icon":"chancerain",
+		"icon_url":"http://icons.wxug.com/i/c/k/chancerain.gif",
+		"skyicon":"",
+		"pop":50,
+		"qpf_allday": {
+		"in": 0.24,
+		"mm": 6
+		},
+		"qpf_day": {
+		"in": 0.19,
+		"mm": 5
+		},
+		"qpf_night": {
+		"in": 0.05,
+		"mm": 1
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "SSE",
+		"degrees": 147
+		},
+		"avewind": {
+		"mph": 6,
+		"kph": 10,
+		"dir": "SSE",
+		"degrees": 147
+		},
+		"avehumidity": 71,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		]
+		}
+	}
+}
+

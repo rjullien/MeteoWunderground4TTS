@@ -5,6 +5,10 @@ from datetime import datetime
 import urllib2
 # import urllib
 def splitPluieJourneeNuit(pluieJour,pluieNuit):
+    if pluieJour == None:
+        pluieJour=0
+    if pluieNuit == None:
+        pluieNuit=0
     if pluieJour !=0 and pluieNuit !=0:
         MessagePluie = ", "\
         + 'dont '\
@@ -18,6 +22,10 @@ def splitPluieJourneeNuit(pluieJour,pluieNuit):
         MessagePluie = ", durant la nuit"
     return MessagePluie
 def splitNeigeJourneeNuit(pluieJour,pluieNuit):
+    if pluieJour == None:
+        pluieJour=0
+    if pluieNuit == None:
+        pluieNuit=0
     if pluieJour !=0 and pluieNuit !=0:
         MessagePluie = ", "\
         + 'dont '\

@@ -1,2 +1,2 @@
 cd /usr/share/nginx/www/jeedom/plugins/script/core/ressources
-python MeteoRene.py forecast Eyguians
+export PYTHONIOENCODING=UTF-8; python MeteoRene.py forecast Eyguians
