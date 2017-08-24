@@ -4,3 +4,5 @@ GetMeteoHelp.txt
 MeteoRene.py
 
 *.pyc
+
+ExJson/AlertRoquefort3.1.json

@@ -219,9 +219,9 @@ def calculateAlert(FilenameAlert):
     FinAlerte=data["alerts"][0]["expires"]
 
     DebutAlerteDate=datetime.strptime(DebutAlerte, '%Y-%m-%d %H:%M:%S GMT')
-    DebutAlerte=datetime.strftime(DebutAlerteDate,'le %A %d %B a %H heure').replace(' 0', ' ')
+    DebutAlerte=datetime.strftime(DebutAlerteDate,'le %A %d %B a %H heures GMT').replace(' 0', ' ')
     FinAlerteDate=datetime.strptime(FinAlerte, '%Y-%m-%d %H:%M:%S GMT')
-    FinAlerte=datetime.strftime(FinAlerteDate,'le %A %d %B a %H heure').replace(' 0', ' ')
+    FinAlerte=datetime.strftime(FinAlerteDate,'le %A %d %B a %H heures GMT').replace(' 0', ' ')
     if False:
         pprint(Alerte)
         pprint(TypeAlerte)
