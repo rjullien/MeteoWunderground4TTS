@@ -21,6 +21,13 @@ def splitPluieJourneeNuit(pluieJour,pluieNuit):
     else: # pluieJour =0 pluieNuit !0
         MessagePluie = ", durant la nuit"
     return MessagePluie
+def test_answer():
+    assert splitPluieJourneeNuit(0,1) == ", durant la nuit"
+    assert splitPluieJourneeNuit(None,1) == ", durant la nuit"
+    assert splitPluieJourneeNuit(1,0) == u", durant la journée"
+    assert splitPluieJourneeNuit(1,None) == u", durant la journée"
+    assert splitPluieJourneeNuit(1,2) == ", dont 1 millimetre le jour et 2 millimetre la nuit"
+
 def splitNeigeJourneeNuit(pluieJour,pluieNuit):
     if pluieJour == None:
         pluieJour=0
@@ -38,6 +45,13 @@ def splitNeigeJourneeNuit(pluieJour,pluieNuit):
     else: # pluieJour =0 pluieNuit !0
         MessagePluie = ", durant la nuit"
     return MessagePluie
+def test_answer():
+    assert splitNeigeJourneeNuit(0,1) == ", durant la nuit"
+    assert splitNeigeJourneeNuit(None,1) == ", durant la nuit"
+    assert splitNeigeJourneeNuit(1,0) == u", durant la journée"
+    assert splitNeigeJourneeNuit(1,None) == u", durant la journée"
+    assert splitNeigeJourneeNuit(1,2) == ", dont 1 centimetre le jour et 2 centimetre la nuit"
+
 def TranslateDay(DayEnglish):
     if DayEnglish == "Monday":
         DayFrench = "Lundi"
@@ -56,16 +70,25 @@ def TranslateDay(DayEnglish):
     else:
         DayFrench = DayEnglish   # If french requested
     return DayFrench
+def test_answer():
+    assert TranslateDay("Monday") == "Lundi"
+    assert TranslateDay("Tuesday") == "Mardi"
+    assert TranslateDay("Wednesday") == "Mercredi"
+    assert TranslateDay("Thursday") == "Jeudi"
+    assert TranslateDay("Friday") == "Vendredi"
+    assert TranslateDay("Saturday") == "Samedi"
+    assert TranslateDay("Sunday") == "Dimanche"
+    assert TranslateDay("Mardi") == "Mardi"
 
 def TranslateMonth(MonthEnglish):
     if MonthEnglish == "January":
         MonthFrench = "Janvier"
-    elif MonthEnglish == "Fevrier":
-        MonthFrench = "Mardi"
-    elif MonthEnglish == "Mars":
-        MonthFrench = "Mercredi"
-    elif MonthEnglish == "Avril":
-        MonthFrench = "Jeudi"
+    elif MonthEnglish == "February":
+        MonthFrench = "Fevrier"
+    elif MonthEnglish == "March":
+        MonthFrench = "Mars"
+    elif MonthEnglish == "April":
+        MonthFrench = "Avril"
     elif MonthEnglish == "May":
         MonthFrench = "Mai"
     elif MonthEnglish == "June":
@@ -85,6 +108,20 @@ def TranslateMonth(MonthEnglish):
     else:
         MonthFrench = MonthEnglish  # If french requested
     return MonthFrench
+def test_answer():
+    assert TranslateMonth("January") == "Janvier"
+    assert TranslateMonth("February") == "Fevrier"
+    assert TranslateMonth("March") == "Mars"
+    assert TranslateMonth("April") == "Avril"
+    assert TranslateMonth("May") == "Mai"
+    assert TranslateMonth("June") == "Juin"
+    assert TranslateMonth("July") == "Juillet"
+    assert TranslateMonth("August") == "Aout"
+    assert TranslateMonth("September") == "Septembre"
+    assert TranslateMonth("October") == "Octobre"
+    assert TranslateMonth("November") == "Novembre"
+    assert TranslateMonth("December") == "Decembre"
+    assert TranslateMonth("Decembre") == "Decembre"
 
 def calculatePluie(ModeMeteo,FilenamePluie):
     # Open json file

@@ -6,3 +6,5 @@ MeteoRene.py
 *.pyc
 
 ExJson/AlertRoquefort3.1.json
+
+lib/.cache/v/cache/lastfailed
