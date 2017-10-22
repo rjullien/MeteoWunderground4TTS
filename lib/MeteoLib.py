@@ -268,16 +268,18 @@ def calculateAlert(FilenameAlert):
         pprint(DebutAlerte)
         pprint(FinAlerte)
 
-    return "Alerte "+ str(TypeAlerte) + " de niveau " + str(CouleurAlerte) + "..." + str(DescriptionAlerte) + "..."  + str(DebutAlerte) + "..." + str(FinAlerte)
+    return "Alert "+ str(TypeAlerte) + " " + str(CouleurAlerte) + "..." + str(DescriptionAlerte) + "..."  + str(DebutAlerte) + "..." + str(FinAlerte)
 
 def getDataMeteo(APIKey,requestType,RequestCity,debug):
 
-    if requestType == "alerts":
-        req="http://api.wunderground.com/api/" + APIKey + "/alerts/lang:FR/q/" + RequestCity + ".json"
+    if requestType == "alert":
+        # French is not working
+        # req="http://api.wunderground.com/api/" + APIKey + "/alerts/lang:FR/q/" + RequestCity + ".json"
+        req="http://api.wunderground.com/api/" + APIKey + "/alerts/q/" + RequestCity + ".json"
     elif requestType == "forecast":
         req="http://api.wunderground.com/api/" + APIKey + "/forecast10day/lang:FR/q/" + RequestCity + ".json"
     else:
-        print usage
+        print "usage: getDataMeteo APIKey, alert|forecast,RequestCity,debug"
         exit()
 
     if (debug):

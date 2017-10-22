@@ -8,3 +8,7 @@ MeteoRene.py
 ExJson/AlertRoquefort3.1.json
 
 lib/.cache/v/cache/lastfailed
+
+rasp/MeteoRoquefort.py
+
+rasp/MeteoRoquefortEyg.py

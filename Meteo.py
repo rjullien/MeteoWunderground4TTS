@@ -79,6 +79,19 @@ if requestType == "forecast":
         print MessageMeteo
 elif requestType == "alert":
     FilenameAlert= meteopath + "/Alert" + RequestCityName + ".json"
+    if not Simul:
+        MeteoResults= lib.MeteoLib.getDataMeteo(APIKey,requestType,RequestCity,debug)
+        if debug:
+            print MeteoResults
+            exit()
+
+        handlerFMeteo = open(FilenameAlert, 'w')
+        handlerFMeteo.write(MeteoResults)
+        handlerFMeteo.close()
+
+    MessageMeteo =  lib.MeteoLib.calculateAlert(FilenameAlert)
+    print unicode(MessageMeteo)
+    
 else:
     print usage
     exit()
